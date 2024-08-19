@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    height: 100vh;
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+    margin: 10em;
+}
+
+.new-book-btn {
+    background-color: bisque;
+    height: 5em;
+    width: 10em;
+    border-radius: 1em;
+    border-width: 3px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    
+}
+
+form {
+    width: 500px;
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    top: 10em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 70%;
+    height: 20px
+}
+
+form input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+form input[type="submit"] {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    height: 4em;
+    width: 10em;
+    background-color: bisque;
+    border-radius: 1em;
+    border-width: 3px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.library {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-top: 30em;
+    overflow-y:auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.book-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 1em;
+    width: 200px;
+    font-size: 15px;
+}
+
+.book-card h3, .book-card h5, .book-card p {
+    margin: 5px 0; /* Reduced margin between text elements */
+    padding: 0; /* Removed padding if any */
+}
+
+.book-card button{
+    margin: 5px 0;
+    padding: 0;
+    background-color: bisque;
+    border-radius: 5px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-transform: uppercase;
+    border: 3px solid black;
+    padding: 7px;
+}
